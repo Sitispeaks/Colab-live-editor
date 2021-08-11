@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}
+    <title>Chatroom</title>
+{% endblock title %}
+{% block body %}
+<style>
+    html, body{
+        height: 100% !important;
+        overflow: hidden;
+    }
+</style>
+    <div class="h-100 d-flex mx-2 justify-content-center align-items-center mt-3">
+        <div>
+
+        <p class="lead">Welcome to the chatroom!</p>
+        {% if user.username != "" %}
+            <p class="lead" style="color: brown;">You are logged in as  <span  class="px-1" style="color: rgb(0, 0, 0); font-weight: bold">{{user.username}}</span></p>
+
+            <br>
+            <div class="d-flex" style="margin-left: 5px; margin-right: 5px;">
+                <input placeholder="Enter room name" style="font-size: 0.8rem; min-width: 150px !important;" type="text" class="form-control mx-1" name="room-name" id="room">
+                <button onclick="redirect();" class="btn btn-sm mx-2 btn-sm btn-success">Enter</button>
+            </div>
+            <br>
+
+            <a href="/auth/logout" class="text-primary">Logout</a>
+        {% else %}
+            <p class="lead">You must login to access the chat room.</p>
+            <a class="strong" href="/auth/login">Login</a>
+            <br/>
+            <hr>
+            <p class="text-muted">Don't have an account? <a href="/auth/register">Register</a></p>
+        {% endif %}
+
+        </div>
+    </div>
+    <script>
+        function redirect(){
+            let roomname = document.getElementById('room').value
+            window.location.href = `/code/${roomname}`
+        }
+    </script>
+{% endblock body %}
