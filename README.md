@@ -5,7 +5,7 @@ Live hosted website: http://colab-editor-live.herokuapp.com/
 
 
 # Screenshot
-<img src="https://github.com/shubhamdhingra38/Basic-Chat-App-Django-Channels/blob/master/Screenshots/Screenshot.png"/>
+<img src="https://github.com/Sitispeaks/Colab-live-editor/blob/master/Screenshot%202021-08-12%20232543.png"/>
 
 
 # TODO
