@@ -1,15 +1,11 @@
 # Live Collaborative Code Editing
 A web application which uses sockets to enable real-time code sharing, chatting and canvas sketching all at once. 
-Live hosted website: https://collab-code-edit.herokuapp.com/
+Live hosted website: http://colab-editor-live.herokuapp.com/
 
 
 
 # Screenshot
 <img src="https://github.com/shubhamdhingra38/Basic-Chat-App-Django-Channels/blob/master/Screenshots/Screenshot.png"/>
-
-
-# Video Demo
-https://youtu.be/Tez2jAOlcM8
 
 
 # TODO
