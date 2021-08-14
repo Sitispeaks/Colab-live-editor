@@ -8,9 +8,10 @@ Live hosted website: http://colab-editor-live.herokuapp.com/
 <img src="https://github.com/Sitispeaks/Colab-live-editor/blob/master/Screenshot%202021-08-12%20232543.png"/>
 
 # DEMO
-https://user-images.githubusercontent.com/60188244/129399647-2bccf353-85da-4255-af20-1e2bba7986ed.mov
+http://user-images.githubusercontent.com/60188244/129399647-2bccf353-85da-4255-af20-1e2bba7986ed.mov
 
-
+# Note :
+ Dont open the url with https
 
 # TODO
 - [x] Password protection for chat and live code editing
