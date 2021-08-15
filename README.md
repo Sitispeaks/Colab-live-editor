@@ -23,5 +23,6 @@ http://user-images.githubusercontent.com/60188244/129399647-2bccf353-85da-4255-a
 - [ ] Zombie rooms removal (in case server crashes and rooms are still occupied)
 - [ ] Resize code window and chat window partition
 - [ ] Add different programming language support
+- [ ] Move to custom vm.
 - [x] FIX: Different canvas sizes cause problems
 - [x] Change code to be run in sandbox environment only (or use third party API)
