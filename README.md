@@ -1,5 +1,5 @@
 # Live Collaborative Code Editing
-Multi user platform which uses Websockets for code editing,chatting and drawing in realtime manner. 
+Multi user platform which uses Websockets for code editing,chatting and drawing in canvas in realtime manner. 
 Live hosted website: http://colab-editor-live.herokuapp.com/
 
 
