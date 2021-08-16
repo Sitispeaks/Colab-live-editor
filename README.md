@@ -1,5 +1,5 @@
 # Live Collaborative Code Editing
-A web application which uses sockets to enable real-time code sharing, chatting and canvas sketching all at once. 
+Multi user platform which uses Websockets for code editing,chatting and drawing in realtime manner. 
 Live hosted website: http://colab-editor-live.herokuapp.com/
 
 
