@@ -1,12 +1,17 @@
 # Live Collaborative Code Editing
-A web application which uses sockets to enable real-time code sharing, chatting and canvas sketching all at once. 
+Multi user platform which uses Websockets for code editing,chatting and drawing in canvas in realtime manner. 
 Live hosted website: http://colab-editor-live.herokuapp.com/
 
 
 
 # Screenshot
-<img src="https://github.com/shubhamdhingra38/Basic-Chat-App-Django-Channels/blob/master/Screenshots/Screenshot.png"/>
+<img src="https://github.com/Sitispeaks/Colab-live-editor/blob/master/Screenshot%202021-08-12%20232543.png"/>
 
+# DEMO
+http://user-images.githubusercontent.com/60188244/129399647-2bccf353-85da-4255-af20-1e2bba7986ed.mov
+
+# Note :
+ Dont open the url with https
 
 # TODO
 - [x] Password protection for chat and live code editing
@@ -17,5 +22,7 @@ Live hosted website: http://colab-editor-live.herokuapp.com/
 - [x] Ability to run code
 - [ ] Zombie rooms removal (in case server crashes and rooms are still occupied)
 - [ ] Resize code window and chat window partition
+- [ ] Add different programming language support
+- [ ] Move to custom vm.
 - [x] FIX: Different canvas sizes cause problems
 - [x] Change code to be run in sandbox environment only (or use third party API)
