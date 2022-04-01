@@ -97,15 +97,6 @@ db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
 DATABASES['default']['CONN_MAX_AGE'] = 500
 
-# CHANNEL_LAYERS = {
-#     "default": {
-#         "BACKEND": "channels_redis.core.RedisChannelLayer",
-#         "CONFIG": {
-#             "hosts": [os.environ.get('REDIS_URL', 'redis://localhost:6379')],
-#         },
-#     },
-# }
-
 
 
 # Password validation
@@ -163,18 +154,10 @@ CHANNEL_LAYERS = {
 #     "default": {
 #         "BACKEND": "channels_redis.core.RedisChannelLayer",
 #         "CONFIG": {
-#             "hosts": [("redis-server-name", 6379)],
+#             "hosts": [("redis", 6379)],
 #         },
 #     },
 # }
-#or alternatively use Redis
-# CHANNEL_LAYERS = {
-#     'default': {
-#         'BACKEND': 'channels_redis.core.RedisChannelLayer',
-#         'CONFIG': {
-#             "hosts": [os.environ['REDIS_URL']],
-#         },
-#     },
-# }
+
 
 django_heroku.settings(locals())

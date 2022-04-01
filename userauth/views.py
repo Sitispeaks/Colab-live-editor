@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect
-# from django.contrib.auth.forms import UserCreationForm
 from . import forms
 from django.contrib.auth import authenticate, login as django_login, logout as django_logout
 from sharededit.models import ChatUser
@@ -24,7 +23,6 @@ def register(request):
     errors = []
     if request.method == 'POST':
         form = forms.CreateUserForm(request.POST)
-        # print(form)
         if form.is_valid():
             print("valid form")
             form.save()
@@ -32,7 +30,6 @@ def register(request):
             user = User.objects.get(username=username)
             chat_user = ChatUser(chat_user=user)
             chat_user.save()
-
             return redirect('/auth/login')
         else:
             print("invalid form")

@@ -53,7 +53,7 @@
     <div class="row" class="mx-0">
         <!-- Editor -->
 
-        <div class="col-md-7 col-sm-12 p-0" >
+        <div class="col-md-7 col-sm-12 p-0 left" >
             <!-- Toolbar -->
             <div class="toolbar p-1" style="min-height: 40px; height: 5vh ;background-color: rgba(0, 0, 0, 0.808);">
                 <button onclick="runCode();" class="btn mx-1 btn-sm btn-info">Run</button>
@@ -103,7 +103,7 @@
 
 
         <!-- Layout with chat + canvas -->
-        <div class="col-md-5 col-sm-12 p-0">
+        <div class="col-md-5 col-sm-12 p-0 right">
             <!-- Chat -->
             <div id="chatbox" style="min-height: 350px !important; height: 50vh; background-color: rgba(0, 0, 0, 0.15);">
                 <div class="mx-4">
@@ -148,5 +148,6 @@
 <script type="text/javascript" src="{% static 'chat.js' %}"></script>
 <script type="text/javascript" src="{% static 'sharededit.js' %}"></script>
 <script type="text/javascript" src="{% static 'canvas.js' %}"></script>
+<script type="text/javascript" src="{% static 'drag.js' %}"></script>
 {% endif %}
 {% endblock %}
