@@ -4,13 +4,9 @@
 {% block title %}
 <title>Room: {{ room_name }} | Collab Code Edit</title>
 
-<!-- <link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script> -->
-<script src="https://pagecdn.io/lib/ace/1.4.12/ace.min.js" crossorigin="anonymous"
-    integrity="sha256-T5QdmsCQO5z8tBAXMrCZ4f3RX8wVdiA0Fu17FGnU1vU="></script>
-<script src="https://pagecdn.io/lib/ace/1.4.12/theme-twilight.min.js" crossorigin="anonymous"></script>
-<script src="https://pagecdn.io/lib/ace/1.4.12/mode-python.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.9.5/ace.min.js" integrity="sha512-19GpbkvqAWqGV89MzaDT7WpqKohnbOl8Kkpg5qRWpB+hlKk3leh45crhkhJAlhPup/VCgXGJLH48mu2Ewdvdcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.9.5/theme-twilight.min.js" integrity="sha512-5PYVGCY1b/igBJONRmbroKhc/l0R/2ubJqbS9vBvKMSOU2shsGaD5ve8KsYYDZEpUzEZQDEaA4tg/yi0tc0ngQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.9.5/mode-python.min.js" integrity="sha512-W1k0SdTb7FU3nxWYkBLQVhTC8b8BU6Je3deBSnLm/dSQ956goMMnL+NYi2SXse1i7k0eUJNMNycTvbEdrJmEFw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
     integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
     crossorigin="anonymous"></script>
@@ -19,7 +15,6 @@
 {% endblock %}
 
 {% block body %}
-
     {% if set_pass %}
     <div class="h-100 d-flex mx-4 justify-content-center align-items-center">
         <div>
@@ -48,12 +43,11 @@
     </div>
 {% else %}
 
-<div class="container-fluid">
+<div class="container-fluid container1">
 
     <div class="row" class="mx-0">
         <!-- Editor -->
-
-        <div class="col-md-7 col-sm-12 p-0 left" >
+        <div class="col-md-7 col-sm-12 p-0 left container__left" style="border: 2px solid red;" >
             <!-- Toolbar -->
             <div class="toolbar p-1" style="min-height: 40px; height: 5vh ;background-color: rgba(0, 0, 0, 0.808);">
                 <button onclick="runCode();" class="btn mx-1 btn-sm btn-info">Run</button>
@@ -89,6 +83,7 @@
                 </div>
             
             </div>
+
             <!-- Main editor -->
             <div id="editor" style="height: 80vh;">#code by: {{user.username}}
             print('Hello world!')
@@ -101,9 +96,8 @@
 
         </div>
 
-
         <!-- Layout with chat + canvas -->
-        <div class="col-md-5 col-sm-12 p-0 right">
+        <div class="col-md-5 col-sm-12 p-0 right container__right">
             <!-- Chat -->
             <div id="chatbox" style="min-height: 350px !important; height: 50vh; background-color: rgba(0, 0, 0, 0.15);">
                 <div class="mx-4">
@@ -141,7 +135,6 @@
     const userName = "{{request.user.username}}"
     const roomName = "{{room_name}}"
 </script>
-
 {% if get_pass or set_pass %}
 <script type="text/javascript" src="{% static 'pass.js' %}"></script>
 {% else %}
