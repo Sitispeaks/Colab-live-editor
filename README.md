@@ -1,6 +1,6 @@
 # Live Collaborative Code Editing
 Multi user platform which uses Websockets for code editing,chatting and drawing in canvas in realtime manner. 
-Live hosted website: **will update with new URL**
+Live hosted website: **< will update with new URL >**
 
 
 # Screenshot
